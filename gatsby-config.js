@@ -68,5 +68,18 @@ module.exports = {
         ],
       },
     },
+    {
+      resolve: 'gatsby-plugin-tinacms',
+      options: {
+        // enabled: process.env.NODE_ENV !== "production",
+        enabled: true,
+        sidebar: {
+          position: "displace",
+        },
+        plugins: [
+          // We'll add some Tinacms plugins in the next step.
+        ],
+      },
+    },
   ],
 }
