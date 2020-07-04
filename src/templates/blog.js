@@ -5,8 +5,10 @@ import useBlogData from '../static_queries/useBlogData'
 import blogTemplateStyles from "../styles/templates/blog.module.scss"
 //this component handles the blur img & fade-ins
 import Img from 'gatsby-image'
+import { remarkForm } from 'gatsby-tinacms-remark'
 
-export default function Blog(props) {
+
+function Blog(props) {
   const data = props.data.markdownRemark
   const allBlogData = useBlogData()
   const nextSlug = getNextSlug(data.fields.slug)
@@ -76,6 +78,8 @@ export const getPostData = graphql`
         }
       }
       html
+      ...TinaRemark
     }
   }
 `
+export default remarkForm(Blog)
