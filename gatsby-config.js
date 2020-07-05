@@ -71,7 +71,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-tinacms',
       options: {
-        enabled: process.env.NODE_ENV !== "production",
+        enabled: process.env.NODE_ENV !== "production" || process.env.BRANCH === 'content',
         // enabled: true,
         sidebar: {
           position: "displace",
