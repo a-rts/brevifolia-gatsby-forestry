@@ -77,7 +77,12 @@ module.exports = {
           position: "displace",
         },
         plugins: [
-          "gatsby-tinacms-git",
+          {
+            resolve: "gatsby-tinacms-git",
+            options: {
+              sshKey: process.env.SSH_KEY
+            },
+          },
           "gatsby-tinacms-remark",
         ],
       },
