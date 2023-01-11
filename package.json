@@ -28,7 +28,7 @@
     "gatsby-source-filesystem": "^2.1.2",
     "gatsby-tinacms-git": "^0.5.6",
     "gatsby-tinacms-remark": "^0.8.5",
-    "gatsby-transformer-remark": "^2.6.1",
+    "gatsby-transformer-remark": "^5.25.1",
     "gatsby-transformer-sharp": "^2.2.1",
     "gatsby-transformer-yaml": "^2.4.9",
     "node-sass": "^4.14.1",
